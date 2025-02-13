@@ -1,0 +1,214 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffe6e9;
+    font-family: 'Georgia', serif;
+    text-align: center;
+  }
+  
+  .notebook-container h1 {
+    color: #b44b67;
+    margin: 20px;
+  }
+  
+  .notebook {
+    width: 700px;
+    height: 400px;
+    perspective: 1500px;
+    margin: 0 auto;
+  }
+  
+ /* Adjusted styles for the notebook flip animation */
+.book {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1500px;
+  }
+  
+  .page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fffaf0;
+    border: 2px solid #e3d1a8;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform-origin: left;
+    transition: transform 0.8s ease, z-index 0.8s ease;
+    z-index: 0;
+  }
+  
+  .page:nth-child(even) {
+    transform-origin: right;
+  }
+  
+  
+  .page h2 {
+    color: #b44b67;
+  }
+  
+  .cover {
+    background: linear-gradient(135deg, #ffd1dc, #fda1a9);
+    text-align: center;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .photo-grid img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #d1a9a0;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #d95d77;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #e87b95;
+  }
+ /* Font for the Cover Page Title */
+.cover h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #ff6b81;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Font for Notebook Pages */
+  .page {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    padding: 20px;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+ 
+  /* Optional: Add a Unique Font for Special Pages (e.g., Page 1) */
+  .page:nth-child(2) {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: #ff4d6d;
+  }
+.adventures img{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #d1a9a0;
+}
+.page {
+    text-align: center;
+  }
+  
+  .quotes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .quote-card {
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 223, 236, 0.7); /* Soft pink background */
+    border: 2px solid #f4b6c2; /* Romantic border */
+    font-family: 'Dancing Script', cursive; /* Handwriting font for elegance */
+    font-size: 18px;
+    color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .quote-card:hover {
+    transform: scale(1.05); /* Slight zoom for interaction */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  .last-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffafbd, #ffc3a0); /* Romantic gradient */
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .last-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .last-page p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .heart-animation {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .heart-image {
+    width: 150px;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .closing-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  
+  .restart-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #ff5e78; /* Vibrant pink */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .restart-btn:hover {
+    background: #ff1f50;
+    transform: scale(1.1);
+  }
+  
+  
